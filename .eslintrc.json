@@ -1,0 +1,15 @@
+{
+    "extends": ["prettier", "plugin:node/recommended"],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "node/no-unsupported-features/es-syntax": "off"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    }
+  }
