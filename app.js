@@ -29,7 +29,7 @@ var indexRouter = require('./routes/index');
 var searchRouter = require('./routes/search');
 var citeRouter = require('./routes/cite');
 var profileRouter = require('./routes/profile');
-var academicRouter = require('./routes/academic');
+var scholarRouter = require('./routes/scholar');
 
 var app = express();
 var limiter = rateLimit({
@@ -50,7 +50,7 @@ app.use('/', indexRouter);
 app.use('/', searchRouter);
 app.use('/', citeRouter);
 app.use('/', profileRouter);
-app.use('/', academicRouter);
+app.use('/', scholarRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
