@@ -73,8 +73,6 @@ router.get('/cite', async (req, res) => {
             params.push(`start=${page}`);
         }
 
-        console.log(`${SITE}/scholar?${params.join('&')}`);
-
         const URL = [`${SITE}/scholar?${params.join('&')}`];
         const citations = await extraction(URL);
 
